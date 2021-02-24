@@ -10,11 +10,15 @@ const [honda, tesla] = cars;
 const {
   speedStats: { topSpeed: teslaTopSpeed }
 } = tesla;
-const [teslaTopColour] = tesla.coloursByPopularity;
 const {
-  speedStats: { topSpeed: hondaTopSpeed, zeroToSixty }
+  coloursByPopularity: [teslaTopColour]
+} = tesla;
+const {
+  speedStats: { topSpeed: hondaTopSpeed }
 } = honda;
-const [hondaTopColour] = honda.coloursByPopularity;
+const {
+  coloursByPopularity: [hondaTopColour]
+} = honda;
 console.log(teslaTopColour);
 ReactDOM.render(
   <table>
